@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css" type="text/css" />
+    <script data-main="lib/Main.js" type="text/javascript" src="lib/require.js"></script>
+    <script src="config.js"></script>
+</head>
+<body>
+
+    <div id="home" data-role="page">
+        <div data-role="header" data-id="nav1" data-position="fixed">
+            <h1>Home</h1>
+            <div data-role="navbar" >
+                <ul>
+                    <li><a href="#home" class="ui-btn-active ui-state-persist">Home</a></li>
+                    <li><a href="#broadcast">broadcast</a></li>
+                    <li><a href="#view">view a broadcast</a></li>
+                </ul>
+            </div>
+        </div>
+        <div role="main" class="ui-content">
+            <p>Welcome to Broadcaster!</p>
+            <p>Would you like to <a href="#broadcast">broadcast</a> or <a href="#view">view a broadcast</a>?</p>
+        </div>
+    </div>
+
+    <div id="broadcast" data-role="page">
+        <div data-role="header" data-id="nav1" data-position="fixed">
+            <h1>Broadcast</h1>
+            <div data-role="navbar" >
+                <ul>
+                    <li><a href="#home" class="" >Home</a></li>
+                    <li><a href="#broadcast" class="ui-btn-active">broadcast</a></li>
+                    <li><a href="#view">view a broadcast</a></li>
+                </ul>
+            </div>
+        </div>
+        <div role="main" class="ui-content">
+            <p>Start Broadcasting!</p>
+            <p>Your id: <span id="my-id"></span></p>
+            <div class="video-container">
+                <video id="my-video" autoplay ></video>
+            </div>
+            <div class="video-overlay">
+                <p>some overlay text baby!</p>
+            </div>
+            
+        </div>
+    </div>
+    <div id="view" data-role="page">
+        <div data-role="header" data-id="nav1" data-position="fixed">
+            <h1>View Broadcasts</h1>
+            <div data-role="navbar" >
+                <ul>
+                    <li><a href="#home" class="">Home</a></li>
+                    <li><a href="#broadcast" class="">broadcast</a></li>
+                    <li><a href="#view" class="ui-btn-active">view a broadcast</a></li>
+                </ul>
+            </div>
+        </div>
+        <div role="main" class="ui-content">
+            <div class="video-container"">
+                <video id="broadcast-video" autoplay ></video>
+            </div>
+            <p>Start Viewing! Live broadcast:</p>
+            <ul id="broadcastList">
+
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

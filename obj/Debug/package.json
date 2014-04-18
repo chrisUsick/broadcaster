@@ -1,0 +1,13 @@
+﻿{
+  "name": "broadcasterServer",
+  "version": "0.0.0",
+  "description": "broadcasterServer",
+  "main": "app.js",
+  "author": {
+    "name": "e6410",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "3.4.4",
+  }
+}

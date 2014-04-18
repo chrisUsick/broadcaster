@@ -1,0 +1,17 @@
+﻿body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+span {
+    font-style: italic;
+}
+
+.video-container {
+    width:auto;
+    height: auto
+}
+
+.video-overlay {
+    position:relative;
+    top:-480px;
+}
